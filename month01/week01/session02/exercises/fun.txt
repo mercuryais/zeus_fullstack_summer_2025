@@ -1,4 +1,1 @@
-ex01.sh
-filelist.txt
-fun.txt
-hello.txt
+hi
