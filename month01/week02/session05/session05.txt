@@ -1,0 +1,5 @@
+session 05
+
+1 flow chart decision and
+2 pseudo code introduction
+3.psuedo code exercises
