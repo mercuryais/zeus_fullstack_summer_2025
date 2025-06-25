@@ -1,0 +1,217 @@
+//Exercise 01
+START   
+    INPUT name 
+    PRINT "Hello ," + name + "!"
+END
+
+// Exercise 02
+START
+    INPUT number1
+    INPUT number2
+    IF number1 > number2 THEN
+        PRINT number1
+    ELSE 
+        PRINT number2
+    ENDIF
+END
+
+//Exercise 03
+START
+    INPUT number
+    IF number % 2 == 0 THEN
+        PRINT "Even"
+    ELSE
+        PRINT "Odd"
+    ENDIF
+END 
+
+// Exercise 04
+START
+    INPUT number1
+    INPUT number2
+    sum = a+b
+    PRINT "Sum: " + sum
+END
+
+// Exercise 05
+START
+    PRINT "ENTER your score"
+    INPUT score
+    IF score >= 50 THEN
+        PRINT "Pass"
+    ELSE
+        PRINT "Fail"
+    ENDIF
+END 
+
+//Exercise 06
+START
+    INPUT a, b, c 
+    min = a
+    IF b>= min THEN
+         IF min >= c THEN
+            min = c
+    ELSE 
+        IF b>=c
+            min = c
+        ELSE   
+            min = b
+    ENDIF
+    PRINT min
+END
+
+//Exercise 07
+START
+    PRINT "Enter password"
+    INPUT password 
+    IF password == open123 THEN
+        PRINT "Access granted"
+    ELSE
+        PRINT "Access denied"\
+    ENDIF
+END
+
+//Exercise 08
+START
+    INPUT number 
+    IF number >=0 THEN
+        IF number == 0 THEN
+            PRINT "zero"
+        ELSE 
+            PRINT "positive"
+    ELSE
+        PRINT "negative"
+    ENDIF
+END
+
+//Exercise 09 
+START
+    INPUT age
+    IF age <13 THEN
+        PRINT "child"
+    ELSE
+        IF age >= 20 THEN
+            PRINT "adult"
+        ELSE
+            PRINT "Teenager"
+    ENDIF
+END
+
+//Exercise 10
+START
+    INPUT c
+    F = c * 1.8 + 32
+    PRINT F
+END
+
+// Exercise 11
+START
+    FOR i FROM 1 to 10 DO
+        DISPLAY i
+        END FOR
+END
+
+// Exercise 12
+START
+    INPUT N
+    FOR i FROM N to 1 DO
+        DISPLAY i
+        END FOR
+END
+
+//Exercise 13
+START
+    input a
+    input b
+    input c
+    input d
+    input f
+    sum = a+b+c+d+f
+    PRINT sum
+END
+
+//Exercise 14 
+START
+    input grade 
+    IF grade > 89 THEN
+        PRINT "A"
+    ELSE
+        IF grade > 79 AND grade < 90 THEN
+            PRINT "B"
+        ELSE
+            IF grade > 69 AND grade < 80 THEN
+                PRINT "C"
+            ELSE
+                IF grade > 59 AND grade < 70 THEN
+                    PRINT "D"
+                ELSE 
+                    PRINT "F"
+    ENDIF
+END
+
+//Exercise 15
+START
+    input withdrawAmount
+    input balance
+    IF withdrawAmount < balance THEN
+        newBalance = balance - withdrawAmount
+        PRINT "Your new balance is " + newBalance
+    ELSE
+        PRINT "insufficent balance"
+    ENDIF
+END
+
+//Exercise 16
+START
+    INPUT N 
+    sum = 1
+    FOR i FROM 1 to N DO
+        sum = sum * i
+    END FOR
+    PRINT sum
+END
+
+//Exercise 17
+START
+    input a, b, c, d
+    IF a >= b THEN
+        IF a >= c THEN
+            IF a >= d THEN
+                PRINT a
+            ELSE
+                PRINT d
+            ENDIF
+        ELSE
+            IF c >=d THEN
+                PRINT c 
+            ELSE
+                print d
+            ENDIF
+    ELSE 
+        IF b >= c THEN
+            IF b >= D THEN
+                print b
+            ELSE
+                print d
+            ENDIF
+        ELSE 
+            IF c >=d  THEN
+                print c 
+            ELSE
+                print d
+            ENDIF
+    ENDIF
+END
+
+//Exercise 18 
+START
+    FOR i DO
+    END FOR
+END
+
+//Exercise 19
+START
+    input age
+    input nationality
+
+END
