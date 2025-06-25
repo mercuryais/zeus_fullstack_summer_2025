@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 deELO
 
 sjdakd
@@ -14,3 +15,20 @@ dkadj
 dkadj
 assdfhgdj
 
+=======
+old
+hi hum
+he
+ello
+llo
+hello
+be human
+bye huan
+blj hsan
+helloksks
+
+ello
+hi human
+
+safs
+>>>>>>> ffa93787c952ce9520685c6a183c254447028854
