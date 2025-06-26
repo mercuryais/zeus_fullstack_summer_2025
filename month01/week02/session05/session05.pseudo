@@ -215,3 +215,21 @@ START
     input nationality
 
 END
+// Exercise 20
+START
+    DISPLAY "Tunatai sandwich Salmontoi sandwich"
+    INPUT type
+    IF type == tuna {
+        tunaSandwich = talh + tuna + othering
+    }
+    ELSE {
+        IF type == salmon {
+            salmonSandwich = talh + salmon + othering
+        }
+        ELSE {
+            DISPLAY "Ta zov bicheerei"
+        }
+        ENDIF
+    }
+    ENDIF
+END
