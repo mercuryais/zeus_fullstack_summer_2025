@@ -1,0 +1,25 @@
+// EX 1
+START
+    string MONTH[12] = “Jan”,”Feb”,”Mar”,”Apr”,”May”,”Jun”,”Jul”,”Aug”,”Sep”,”Oct”,”Nov”,”Dec”
+    i = 0
+    WHILE i < 12 THEN
+        DISPLAY MONTH[i]
+        i = i + 1
+    ENDWHILE
+END
+//EX 2
+START
+    string MONTH[12] = “Jan”,”Feb”,”Mar”,”Apr”,”May”,”Jun”,”Jul”,”Aug”,”Sep”,”Oct”,”Nov”,”Dec”
+    i = 0
+    WHILE i < 12 THEN
+        IF i  > 4 AND i < 8 THEN
+            DISPLAY MONTH[i]  
+        ENDIF
+        i = i + 1
+    ENDWHILE
+END
+//EX 3
+START
+    string MONTH[12] = “Jan”,”Feb”,”Mar”,”Apr”,”May”,”Jun”,”Jul”,”Aug”,”Sep”,”Oct”,”Nov”,”Dec”
+    DISPLAY MONTH[10]
+END

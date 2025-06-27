@@ -1,0 +1,6 @@
+backup
+dirlist.txt
+file1.txt,
+file2.txt,
+file3,txt
+this is a project folder
