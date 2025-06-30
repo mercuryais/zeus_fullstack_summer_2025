@@ -7,4 +7,4 @@ foundCoins = (foundCoins*1)
 magic_coins = (magic_coins * 365)
 stolen_coins = (stolen_coins * 52)
 sum = foundCoins + magic_coins + stolen_coins
-print(sum)
+print("Total coins of mine is: ", sum)
