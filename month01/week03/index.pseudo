@@ -1,0 +1,63 @@
+START
+num A[5]
+index = 0
+    IF index < 5 THEN
+        OUTPUT "GIVE ME NUMBER"
+        INPUT too
+        A[index] = too
+        index = index + 1
+    ELSE
+        index = 0
+        IF index < 5 THEN
+            OUTPUT A[index]
+            index = index + 1
+        ENDIF
+    ENDIF
+END
+
+//Exercise 2
+START
+    num = B[5]
+    index = 0
+    num max = 0
+    IF index < 5 THEN
+        OUTPUT "GIVE ME NUMBER"
+        INPUT too
+        B[index] = too
+        index = index + 1
+        IF too > max THEN
+            max = too
+        ENDIF
+    ELSE
+        OUTPUT max
+    ENDIF
+END
+
+//EXERCISE 3
+START
+    num = C[5]
+    index = 0
+    IF index < 5 THEN
+        OUTPUT "GIVE ME NUMBER"
+        INPUT too
+        C[index] = too
+        index = index + 1
+        IF too % 2 == 0 THEN
+            OUTPUT too
+        ENDIF
+    ELSE
+    ENDIF
+END
+
+//EXERCISE 1 first
+START
+    INPUT N 
+    num A[N]
+    index = 0
+    WHILE index <= N THEN
+        INPUT too
+        A[index] = too
+        OUTPUT N + "dugeer array deer " + too
+        index = index + 1
+    ENDWHILE
+END
