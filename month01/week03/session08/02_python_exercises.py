@@ -63,6 +63,10 @@ print(len(name))
 greetings = "Hello, "
 haha = "World!"
 print(greetings+haha)
+
 # X 3
 word = "Pythonista"
 print(word[0:3])
+
+# X 4
+thestr = "The dog runs fast." 
