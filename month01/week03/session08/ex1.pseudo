@@ -1,0 +1,15 @@
+START
+    num r = Random
+    WHILE num r != guess
+        INPUT guess
+        IF guess >=0 AND guess <=100 THEN
+            IF r > guess
+                OUTPUT "too low try again"
+            ELSE IF r < guess
+                OUTPUT "too high try again"
+            ELSE
+                OUTPUT "correct"
+            ENDIF
+        ENDIF
+    ENDWHILE
+END
