@@ -3,7 +3,7 @@
 # X 1
 num = 7
 
- # X 2
+# X 2
 a = 5
 b = 8
 temp = a
@@ -132,4 +132,4 @@ splitted = color.split()
 print(splitted[0])
 
 # X 10
-print(quote.startswith("Hello"))
+print(quote.startswith("The"))
