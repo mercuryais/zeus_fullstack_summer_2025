@@ -61,3 +61,15 @@ del wizard_list[7]
 list1 = [10,4,5,-1,0,11]
 print(list1.sort())
 print(list1)
+
+
+# Цэг, () хоерын ялгаа
+# Яагаад ['Why', 'was', 6, 'afraid', 'of', 7, 'because', 7, 8, 9] гэж
+
+fs = ("fsfs", "sdds", "dfdf", "gfdgddfg", "dgdfg") # is tuple () is usually recommended
+fs = "fsfs" "sdds" "dfdf" "gfdgddfg" "dgdfg" # just like + in every space
+print(fs)
+vx = "fsfs sdds dfdf gsdgdfgdfg dfgdfg" # string
+rw = ["sdfsdfsdfsdfsffsdfsf"] # just a list
+re = ["sdfsdf" "sdfsdf" "sfsdfsdf" "sdfsf"] # just a single list 
+re = ["sdfsdf", "sdfsdf", "sfsdfsdf", "sdfsf"]
