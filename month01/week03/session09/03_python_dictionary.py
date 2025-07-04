@@ -43,16 +43,16 @@ print(len(favorite_sports))
 
 # X 0.1
 favorite_food = {'Belen goimon' : 'Goimon, us, nogoo, haluun nogoo',
-                 'salad' : 'toms, mayo, ham, ondog, songino',
-                 'buuz' : 'mah, guril, songino'
-                 }
+                'salad' : 'toms, mayo, ham, ondog, songino',
+                'buuz' : 'mah, guril, songino'
+                }
 print(favorite_food)
 
 # X 0.2
 realDic = {'Question' : 'Асуулт',
-           "Response" : 'Хариулт'}
+        "Response" : 'Хариулт'}
 
 # X 0.3
 favPet = {'Me' : 'Cat',
-          'Sister' : 'Dog',
-          'Cat' : 'Mice'}
+        'Sister' : 'Dog',
+        'Cat' : 'Mice'}
