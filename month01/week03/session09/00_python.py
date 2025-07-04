@@ -127,7 +127,7 @@ print(quote.count("l"))
 print(quote.replace("who", "ME"))
 
 # X 9
-color = "red,green,blue"
+color = "red, green, blue"
 splitted = color.split()
 print(splitted[0])
 
