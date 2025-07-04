@@ -34,4 +34,3 @@ print(c)
 a = [1, 2]
 b= [3, 4]
 print(a+b)
-# listruu horvuulsen ch shine utgand horvuulj onooj baigaa yu? jinhene tuple utga list ruu horvohgui zov uu

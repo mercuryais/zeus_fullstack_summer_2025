@@ -79,18 +79,16 @@ print(numbers[0:5])
 # X 8
 list = [1, 2, 3]
 list2 = [4, 5, 6]
-list.append(list2)
+list.extend(list2)
 print(list)
 # Why square brackets are seen
+# list2 becomes one element and added into list
 
 # X 9
 print("mango" in fruits)
 
-
-print([4,5,6] in list) # <-- Why?
-
 # X 10
-squares = [x**2 for x in range(6)]
+squares = [x**2 for x in range(1, 6)]
 print (squares)
 # how this works ^^
 
@@ -117,11 +115,8 @@ print(greetings)
 # X 6
 print(quote.upper())
 
-quote.upper()
-print(quote) # Difference
-
 # X 7
-print(quote.count("l"))
+print(quote.count("ll"))
 
 # X 8
 print(quote.replace("who", "ME"))

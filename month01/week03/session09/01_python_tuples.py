@@ -45,3 +45,4 @@ packed_tuple = ('banana', 'apple')
 fruit1, fruit2 = packed_tuple
 print(fruit1)
 print(fruit2)
+
