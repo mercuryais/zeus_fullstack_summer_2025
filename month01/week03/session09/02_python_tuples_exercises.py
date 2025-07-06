@@ -21,16 +21,6 @@ print(color3)
 # X 5.5
 tuple1 = (1, 2)
 tuple2 = (3, 4)
-listtuple1 = list(tuple1)
-listtuple2 = list(tuple2)
-listtuples = listtuple1 + listtuple2
-newtuples = tuple(listtuples)
-print(newtuples)
-
-# or 
-c = tuple1 + tuple2
+c = tuple1+tuple2
 print(c)
 
-a = [1, 2]
-b= [3, 4]
-print(a+b)
