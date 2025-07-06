@@ -5,7 +5,7 @@ favorite_sports = ['Ralph Williams, Football'
                 ,'Micheal Tippet, Basketball'
                 ,'Edward Elgar, Baseball']
 ralph_sport = favorite_sports[0]
-print(ralph_sport[16:])
+print(ralph_sport[15:])
 
 # Solution - Dictionary
 
