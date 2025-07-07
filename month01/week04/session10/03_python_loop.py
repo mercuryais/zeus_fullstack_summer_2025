@@ -22,7 +22,7 @@ for n in range(4):
     turtle.right(90)
 # X 3
 import turtle
-turtle.width(135)
+turtle.width(150)
 turtle.color('blue')
 for n in range(4):
     turtle.forward(200)
@@ -34,14 +34,13 @@ turtle.width(30)
 
 turtle.color("red")
 for n in range(4):
-     turtle.forward(200)
-     turtle.right(90)
+    turtle.forward(200)
+    turtle.right(90)
 turtle.color('orange')
 for n in range(4):
-     turtle.forward(150)
-     turtle.right(90)
+    turtle.forward(150)
+    turtle.right(90)
 turtle.color("yellow")
 for n in range(4):
-     turtle.forward(100)
-     turtle.right(90)
-  
+    turtle.forward(100)
+    turtle.right(90)
