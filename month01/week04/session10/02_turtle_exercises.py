@@ -1,7 +1,6 @@
 import turtle
-
+RED = turtle.color('red')
 # X 1
-import turtle
 turtle.color('purple')
 turtle.dot(500)
 turtle.color('red')
