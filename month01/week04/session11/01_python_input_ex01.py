@@ -1,0 +1,8 @@
+a = input("Ehnii utga: ")
+b = input("Hoyrdoh utga: ")
+aToNumber = int(a)
+bToNumber = int(b)
+print(f"tanii ehnii utga", a, "tanii hoyrdoh utga", b)
+print(type(aToNumber))
+print(type(bToNumber))
+print(aToNumber + bToNumber)
