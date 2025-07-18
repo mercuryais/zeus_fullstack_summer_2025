@@ -12,7 +12,6 @@ for n in range(250):
     turtle.color(random.choice(colours))
     turtle.forward(width)
     turtle.right(180)
-    
     turtle.forward(width)
     turtle.right(180)
     turtle.left(angle)
