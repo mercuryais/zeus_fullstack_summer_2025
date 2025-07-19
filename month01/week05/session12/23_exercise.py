@@ -8,10 +8,7 @@ turtle.width(40)
 for x in range(0, 180):
         turtle.color(x, 0, 0)
         turtle.goto(0, 0)
-        turtle.right(1)
-        turtle.goto(0, 0)
-        turtle.right(1)
-        turtle.fd(400)
-
+        turtle.right(2)
+        turtle.fd(300)
 
 turtle.done()
