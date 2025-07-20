@@ -8,4 +8,4 @@ for size in range(400, 0, -10):
     turtle.color(random.choice(paint))
     turtle.dot(size)
 
-turtle.done
+turtle.done()

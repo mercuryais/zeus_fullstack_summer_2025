@@ -3,7 +3,7 @@ import random
 
 turtle.colormode(255)
 turtle.speed(0)
-
+turtle.width(2)
 for x in range(20, 200):
         turtle.color(0, x, 0)
         
