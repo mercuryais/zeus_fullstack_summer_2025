@@ -9,7 +9,7 @@ for c in range(0, 255):
     x = random.randint(-200, 200)
     y = random.randint(-200, 200)
     turtle.goto(x, y)
-    turtle.color(c, 60, 180)
+    turtle.color(c, 120, 240)
     turtle.dot(30)
 
 turtle.done()
