@@ -1,0 +1,82 @@
+# Declarations
+contacts = []
+selected = ""
+
+
+# Looping unless user choose to exit
+while not selected == "5":
+    isFound = False
+
+    # Showing menus
+    print("Ta doorh menu nees songoltoo hiine uu")
+    menu = ["1: Add contact", "2: List all contact",  "3: Search for a contact by name" , "4: Show total number of contacts", "5: Exit"]
+    for n in range(len(menu)):
+        print(menu[n])
+        n= n + 1
+    selected = input("Tanii songolt : ")
+
+    # Checking if the selection is in menu
+    if selected not in ["1", "2", "3", "4", "5"]:
+        print("\n \n \n")
+        print("Ta zov menu songono uu")
+        print("\n \n \n")
+        
+    # Add contact function
+    if selected == "1":
+        name = input("Neree oruulna uu : ")
+        number = input("Dugaaraa oruulna uu : ")
+        email = input("Email ee oruulna uu : ")
+        contact = {
+            "Ner" : name,
+            "Dugaar" : number,
+            "Mail" : email
+        }
+        contacts.append(contact)
+
+    # List all contact function
+    if selected == "2":
+        print("\n\n\n")
+        for n in range(len(contacts)): 
+            print(contacts[n])
+            n = n + 1
+        print("\n\n\n")
+        if len(contacts) == 0:
+            print("Ymarch contact odoogoor alga.")
+            print("\n\n\n")
+
+    # Search contact function2
+    if selected == "3":
+        findName = input("Ta ymar nereer haih ve : ")
+        print("\n\n\n")
+        for n in range(len(contacts)):
+            if findName in contacts[n]["Ner"]: 
+                print(contacts[n])
+                isFound = True
+        print("\n\n\n")
+        if isFound == False:
+            print("Tanii haisan contact alga")
+            print("\n\n\n")
+        
+    # Showing total number of contact function
+    if selected == "4":
+        print("\n\n\n Niit contact nii too : ",len(contacts), "\n\n\n")
+        if len(contacts) == 0:
+            print("\n\n\n")
+            print("Odoogoor ymarch contact alga")
+            print("\n\n\n")
+    
+    if selected == "5":
+        print("Amjilttai garlaa")
+
+
+Members 1. Batsuuri 2. Orgil 3. Bulgan
+
+Project goal Setup github ,vs and python Make menu (Add contact, List all contact, Search for a contact by name, Show total number of contacts) Programm the menus Merge Check Fix bug
+
+Member 1 Github setup Write MD
+
+Member 2 Python setup Setup instruction
+
+Member 3 Project Structure First code
+
+Everyone Programming Checking Debugging Comment on their work
