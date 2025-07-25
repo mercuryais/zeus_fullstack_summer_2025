@@ -19,7 +19,6 @@ def  dots(x, y, w, paint):
         else: 
             paint = "yellow"
         w = w - 30
-    if
         dots(x, y, 90, 'red')
 dots(0, 0, 90, 'red')
 turtle.done()
