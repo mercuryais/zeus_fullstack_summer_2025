@@ -27,3 +27,9 @@ for f in range(20):
     y = random.randint(-300, 300)
     flower(x, y, random.choice(colors))
 turtle.done()
+picked = input("Rock paper scissors! : ")
+def random():
+    randomNumber = random.randint(0, 3)
+    print(randomNumber)
+
+random()
