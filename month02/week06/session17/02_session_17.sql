@@ -1,0 +1,1 @@
+CREATE TABLE IF NOT EXISTS users (id TEXT, first_name TEXT, surname TEXT, salary INT)
