@@ -54,7 +54,11 @@ print(calculate_area_rectangle(20, 30))
 
 # X 3.7
 def get_first_element(elements = []):
-    return elements[0]
+
+    if len(elements) == 0:
+        return None
+    else:
+        return elements[0]
 
 print(get_first_element([10, 3, 5, 100, 200]))
 
@@ -69,17 +73,24 @@ print(power(10, 3))
 
 # X 3.9
 def find_max_in_list(my_list):
-    return max(my_list)
+    if len(my_list) == 0:
+        return None
+    else:
+        return max(my_list)
+
 
 print(find_max_in_list([2, 30 ,4]))
 
 # X 3.10
 def calculate_average(my_list):
-    sum = 0
-    for number in my_list:
-        sum += number
-    avg = sum / len(my_list)
-    return avg
+    if len(my_list) == 0:
+        return None
+    else:
+        sum = 0
+        for number in my_list:
+            sum += number
+        avg = sum / len(my_list)
+        return avg
 
 print(calculate_average([200, 20, 10]))
 
