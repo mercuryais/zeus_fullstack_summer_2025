@@ -60,6 +60,10 @@ def get_first_element(elements = []):
     else:
         return elements[0]
 
+#   if elements:
+#        return elements[0]
+#    return None
+
 print(get_first_element([10, 3, 5, 100, 200]))
 
 # X 3.8
@@ -69,14 +73,21 @@ def power(a, b):
         sum = a * sum
     return sum
 
+#   return a**b
+
 print(power(10, 3))
 
+# Sequential search
 # X 3.9
 def find_max_in_list(my_list):
     if len(my_list) == 0:
         return None
     else:
         return max(my_list)
+
+#  for num in my_list:
+#   if num > max_value:
+#       max_value = num
 
 
 print(find_max_in_list([2, 30 ,4]))
@@ -91,7 +102,9 @@ def calculate_average(my_list):
             sum += number
         avg = sum / len(my_list)
         return avg
-
+#   if not numbers:
+#       return None
+#   sum(numbers) / len(numbers)
 print(calculate_average([200, 20, 10]))
 
 
