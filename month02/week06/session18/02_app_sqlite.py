@@ -19,6 +19,6 @@ while (user_input := input(menu)) != "3":
         add_entry(entry_content, entry_date)
     elif user_input == '2':
         print("Viewing...")
-        get_entries()
+        print(get_entries())
     else:
         print("Invalid selection. Please try again!")
