@@ -80,7 +80,7 @@ print(power(10, 3))
 # Sequential search
 # X 3.9
 def find_max_in_list(my_list):
-    if len(my_list) == 0:
+    if not my_list:
         return None
     else:
         return max(my_list)

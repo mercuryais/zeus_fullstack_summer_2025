@@ -21,6 +21,6 @@ while (user_input := input(menu)) != "3":
         print("Viewing...")
         entries = get_entries()
         for entry in entries:
-            print(f"{entry['date']}\n{entry['content']}\n\n")
+            print(f"\n\n{entry['date']}\n{entry['content']}")
     else:
         print("Invalid selection. Please try again!")

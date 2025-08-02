@@ -15,5 +15,5 @@ def add_entry(entry_content, entry_date):
 def get_entries():
     with connection:
         cursor = connection.execute("SELECT content, date FROM entries;")
-        entries = [{"connect":row[0], "date": row[1]} for row in cursor.fetchall()]
-    return entries()
+        entries = [{"content":row[0], "date": row[1]} for row in cursor.fetchall()]
+    return entries
