@@ -21,5 +21,3 @@ print(lower)
 words = ["hi", "hello", "to", "world", "on"]
 long = [three for three in words if len(three) > 2]
 print(long)
-
-dir(str)

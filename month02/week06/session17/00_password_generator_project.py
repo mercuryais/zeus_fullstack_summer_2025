@@ -49,6 +49,6 @@ for _ in range(numbersQ):
 
 random.shuffle(passwd)
 vassal = "".join(passwd)
-print(vassal)
-
+print(vassal)   
+passwd.extend(vassal)
 # WHAT IS THE DIFFERENCE BETWEEN CHOICES AND CHOICE
