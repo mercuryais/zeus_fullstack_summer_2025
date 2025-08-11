@@ -19,9 +19,9 @@ while (user_input := input(menu) != "6"):
     if user_input == "1":
         pass
     elif user_input == "2":
-        pass
+        database.get_movies(upcoming=True)
     elif user_input == "3":
-        pass
+        database.get_movies()
     elif user_input == "4":
         pass
     elif user_input == "5":
