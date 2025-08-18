@@ -3,12 +3,14 @@ import random
 import os
 import time
 
-# DB_FILE = # TODO
+CREATE_TABLE_SQL = """CREATE TABLE IF NOT EXISTS players (
+    name TEXT,
+    chips INTEGER)"""
+GET_PLAYER_SQL = """SELECT * FROM players WHERE name = ?"""
 def get_db_connection():
     conn.row_factory = sqlite3.Row
     return conn
 def setup_database():
-    """`players` хүснэгт байхгүй бол үүсгэнэ."""
     conn = get_db_connection()
     conn.commit()
     conn.close()
