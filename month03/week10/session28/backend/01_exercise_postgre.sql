@@ -48,3 +48,5 @@ inner join employees e on e.employee_id = p.lead_employee_id
 select e.first_name, e.last_name d.department_name
 from employee e
 left join departments d on e.department_id = d.department_id
+
+select p.project_name 
