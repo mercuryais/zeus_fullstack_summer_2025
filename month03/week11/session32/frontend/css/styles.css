@@ -1,0 +1,29 @@
+h1, h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: green;
+    background-color: aquamarine;
+    text-align: center;
+}
+img{
+    width: 350px;
+    height: 350px;
+}
+p{
+    width: 200px;
+    background-color: aquamarine;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: yellow;
+    border: 1px solid black;
+}
+ul {
+    font-style: italic;
+    background-color: yellowgreen;
+}
+.movies {
+    font-weight: 700;
+}
+
+#favourite {
+    color: red;
+    font-size: 15px;
+}

@@ -71,11 +71,7 @@ left join rental r2 on i.inventory_id = r2.inventory_id
 left join customer c1 on r1.customer_id = c1.customer_id
 left join customer c2 on r2.customer_id = c2.customer_id
 where c2.customer_id > c1.customer_id;
-<<<<<<< HEAD
 -- EX 10
-=======
-
->>>>>>> 8a43d6836a7af8c343db2f07db26ada154418c86
 select f.title, r.rental_date
 from film f
 left join inventory i on f.film_id = i.film_id
