@@ -47,3 +47,10 @@ from actor a
 left join film_actor fa on a.actor_id = fa.actor_id
 left join film f on f.film_id = fa.film_id
 group by a.first_name, a.last_name
+
+select f.rating, sum(p.amount)
+from film f
+left join inventory i on f.film_id = i.film_id
+left join rental r on i.inventory_id = r.inventory_id 
+left join payment p on p.rental_id = r.rental_id
+group by f.rating

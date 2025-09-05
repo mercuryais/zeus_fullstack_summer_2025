@@ -97,7 +97,8 @@ def show_course_statistics(conn):
         select c.course_name, count(s), avg(s.grade), max(s.grade), min(s.grade)
         from courses c
         left join students s on c.id = s.course_id
-        group by c.course_name 
+        group by c.course_name, c.id
+        order by c.id
         """
         cur.execute(statistic_sql)
         rows = cur.fetchall()
