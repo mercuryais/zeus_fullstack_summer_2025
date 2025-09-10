@@ -1,0 +1,45 @@
+.tailbar {
+    position: absolute;
+    top: 400px;
+    left: 60px;
+    background-color: yellow;
+    padding-left: 40px;
+    padding-right: 80px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.headerfooter {
+    background-color: #636363 ;
+    color: white;
+    position: absolute;
+    padding: 1%;
+    text-align: center;
+    left: 0;
+    right: 0;
+}
+#header {
+    top: 0;
+}
+#footer {
+    bottom: 0;
+}
+.block{
+    background-color: rgb(7, 111, 216);
+    margin: 5px;
+    color: white;
+    padding: 10px;
+}
+.inline {
+    background-color: red;
+    margin-left: 5px;
+    color: white;
+    padding: 3px;
+}
+.stack {
+    color: black;
+    background-color: green;
+    position: absolute;
+    padding: 7px;
+    top: 30px;
+    left: 400px;
+}

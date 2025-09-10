@@ -1,0 +1,89 @@
+h1 {
+    background-color: aliceblue;
+    text-align: center;
+}
+
+.min-box, .max-box {
+    background-color: aquamarine;
+    font-size: 15px;
+    color: blue;
+    width: 600px;
+    height: 600px;
+}
+.inside-box {
+    background-color: violet;
+    width: 80%;
+    height: 80%;
+    margin: auto;
+}
+.content{
+    background-color: aquamarine;
+    width: 300px;
+    height: 300px;
+    overflow: scroll;
+}
+.block {
+    background-color: blanchedalmond;
+}
+.inline {
+    background-color: burlywood;
+}
+.box-01, .box-02, .box-03, .box-04, .box-05, .box-06 {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+.box-01 {
+    background-color: turquoise;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.box-02 {
+    background-color: tomato;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+}
+.box-03 {
+    background-color: yellow;
+    position: absolute;
+    top: 20px;
+    right: 10px;
+}
+.box-04 {
+    background-color: turquoise;
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
+.box-05 {
+    background-color: tomato;
+    position: relative;
+    top: 10px;
+    left: 50%;
+}
+.box-06 {
+    background-color: yellow;
+    position: relative;
+    top: 20px;
+    right: 10px;
+}
+.outer-box {
+    width: 500px;
+    height: 500px;
+    background-color: turquoise;
+    position: relative;
+}
+.inner-box {
+    width: 30%;
+    height: 30%;
+    background-color: cadetblue;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+.outer {
+    background-color: grey;
+    margin: 50px;
+}
