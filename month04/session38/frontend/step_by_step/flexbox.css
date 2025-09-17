@@ -1,0 +1,23 @@
+body { font-family: sans-serif; }
+.container {
+    display: flex;
+    justify-content: CENTER;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border: 2px solid #ccc;
+    margin-top: 20px;
+}
+.box {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 20px;
+    text-align: center;
+}
+.box-1 { background-color: #e67e22; }
+.box-2 { background-color: #2ecc71; }
+.box-3 { background-color: #3498db; }
+/* --- ЭНД FLEXBOX КОДОО НЭМНЭ --- */
+.container {
+    display: flex;
+}

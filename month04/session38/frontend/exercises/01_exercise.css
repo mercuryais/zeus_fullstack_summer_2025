@@ -1,0 +1,23 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 155px;
+    height: 100px;
+}
+.box{
+    height: 50px;
+    width: 70px;
+    border: 3px black solid;
+}
+#green  {
+    background-color: yellow;
+}
+#orange {
+    background-color: orange;
+}
+#pink {
+    background-color: pink;
+}
+#red {
+    background-color: red;
+}

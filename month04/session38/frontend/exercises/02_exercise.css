@@ -1,0 +1,32 @@
+.container {
+   display: flex;
+   flex-wrap: wrap;
+   border: black 1px solid;
+   width: 700px;
+   height: 600px;
+   flex-direction: column;
+}
+.cyan{
+    background-color: rgb(156, 240, 205);
+    width: 120px;
+    height: 45px;
+    justify-content: start;
+}
+.blue {
+    background-color: rgb(163, 217, 247);
+    width: 250px;
+    height: 45px;
+    justify-content: end;
+}
+.purple {
+    background-color: rgb(189, 158, 237);
+    width: 390px;
+    height: 45px;
+    align-items: end;
+}
+.cyan-container{
+    justify-content: start;
+}
+.blue-container {
+    justify-content: end;
+}

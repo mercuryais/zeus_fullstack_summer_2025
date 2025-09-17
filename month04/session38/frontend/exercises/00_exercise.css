@@ -1,0 +1,21 @@
+.box{
+    display: inline-flex;
+    width: 80px;
+    height: 20px;
+    padding: 5px 20px;
+}
+#green  {
+    background-color: green;
+}
+#orange {
+    background-color: orange;
+}
+#pink {
+    background-color: pink;
+}
+#red {
+    background-color: red;
+}
+#purple {
+    background-color: purple;
+}
