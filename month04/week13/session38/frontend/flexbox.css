@@ -19,10 +19,10 @@
     align-items: center;
 }
 #box4 {
-    /* float: right; */
+    float: right;
 }
 #box3 {
-    /* float: right; */
+    float: right;
 }
 .outer-container{
     width: 800px;

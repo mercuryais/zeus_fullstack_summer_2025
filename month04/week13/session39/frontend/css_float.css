@@ -1,0 +1,32 @@
+.container { 
+    width: 480px;
+    height: 310px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    border: black 2px solid;
+
+}
+.orange {
+    background-color: rgb(238, 115, 93);
+    width: 150px;
+    height: 300px;
+}
+.red {
+    background-color: rgb(165, 34, 34);
+    width: 305px;
+    height: 70px;
+}
+.blue {
+    background-color: rgb(24, 24, 84);
+    height: 215px;
+    width: 140px;
+    position: absolute;
+    left: 175px;
+    top: 100px;
+}
+div{
+    margin: 5px;
+}
+#bluea {
+    left: 340px;
+}

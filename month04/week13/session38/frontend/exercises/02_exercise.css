@@ -1,32 +1,29 @@
 .container {
    display: flex;
    flex-wrap: wrap;
-   border: black 1px solid;
-   width: 700px;
-   height: 600px;
-   flex-direction: column;
+   border: black 2px solid;
+   width: 410px;
+   height: 255px;
+   padding-bottom: 5px;
 }
 .cyan{
     background-color: rgb(156, 240, 205);
     width: 120px;
     height: 45px;
-    justify-content: start;
 }
 .blue {
     background-color: rgb(163, 217, 247);
     width: 250px;
     height: 45px;
-    justify-content: end;
 }
 .purple {
     background-color: rgb(189, 158, 237);
-    width: 390px;
+    width: 385px;
     height: 45px;
-    align-items: end;
 }
-.cyan-container{
-    justify-content: start;
+div{
+    margin: 10px 0 0 10px;
 }
-.blue-container {
-    justify-content: end;
+.cyan, .blue, .purple{
+    border: 2px black solid;
 }

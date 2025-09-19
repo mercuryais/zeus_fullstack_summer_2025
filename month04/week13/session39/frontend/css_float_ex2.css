@@ -1,0 +1,79 @@
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.container1 {
+    width: 800px;
+    height: 350px;
+    display: flex;
+    border: 1px solid grey;
+    border-radius: 10px;
+}
+.profile {
+    background-color: #FFD1DA;
+    width: 34%;
+    border-right: #DB005B 3px dotted;
+    align-content: center;
+    padding-left: 36px;
+}
+.info {
+    background-color: #FFEEF4;
+    width: 64%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+.level {
+    background-color: #FFEEF4;
+    border: 1px solid grey;
+    width: 200px;
+    border-radius: 50px;
+    text-align: center;
+}
+.points {
+    background-color: #FFEEF4;
+    border: 1px solid grey;
+    width: 200px;
+    border-radius: 50px;
+    text-align: center;
+}
+.player-name {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    height: fit-content;
+    margin-top: 40px;
+}
+.image {
+    width: 150px;
+    padding-left: 20px;
+}
+p{
+    width: 50%;
+    text-align: center;
+    height: fit-content;
+    margin: 0;
+}
+.icon {
+    width: 40px;
+    height: 40px;
+    bottom: 2px;
+}
+h3{
+    width: fit-content;
+    height: fit-content;
+}
+.ann {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    height: fit-content;
+}
+ul {
+    list-style: none;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    padding: 0;
+}
