@@ -1,0 +1,26 @@
+/* Universal Selector */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-sizing: border-box;
+}
+/* Tag selector */
+main {
+    max-width: 1440px;
+    height: 100vh;
+    background-color: silver;
+    margin: 0 auto;
+}
+
+h2{
+    text-align: center;
+}
+
+section {
+    width: 80%;
+    margin: 0 auto;
+    background-color: papayawhip;
+    margin-bottom: 20px;
+}
