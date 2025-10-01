@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive DOM (DOCUMENT OBJECT MODEL)</title>
+    <link rel="stylesheet" href="./css/styles.css">
+
+</head>
+<body>
+    <div class="card">
+        
+        <div class="header">
+            <h1 id="main-title">
+                My To-Do List
+            </h1>
+            <p id="sub-title">
+                Add New Task
+            </p>
+        </div>
+        
+        <div class="input-group">
+            <input type="text" id="task-input" placeholder="Enter Input">
+            <button id="add-button">
+                Add
+            </button>
+        </div>
+
+        <div>
+            <h2>Tasks</h2>
+            <ul id="tasks">
+                <li class="todo-item">First Task</li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        // Inline javascript  
+        // DOM
+        // document.writeln('<h1>Hello Javascript</h1>')
+        // Variable
+        // Python Variable
+        // x = 5
+        // Javascript Variable
+        var x = 5;
+        console.log(x);
+        var name = 'mercury';
+        console.log(name);
+        console.log(43);
+        let buhelToo = 10;
+        let butarhaiToo = 3.14;
+        let isBoolean = true;
+        let thisIsText = "Hello World";
+        
+        // Change Varialbe
+        buhelToo = 15;
+        console.log(`buhel too ${buhelToo}`); // template literal `Text ${}`
+        let PI = 3.14;
+        PI = 3.45
+        console.log(PI)
+
+        const mainTitle = document.getElementById('main-title')
+        console.log(mainTitle)
+        const subTitle = document.getElementById('sub-title')
+        console.log(subTitle)
+        const addButton = document.getElementById("add-button")
+        console.log(addButton)
+
+        // Change Contents
+        mainTitle.textContent = 'Changed Main Title';
+        subTitle.textContent = 'Changed Sub Title';
+
+        // Change Colours
+        mainTitle.style.color = "white";
+        mainTitle.style.padding = "2rem 1rem 1rem 1rem"
+        mainTitle.style.fontSize = "1.5rem";
+        mainTitle.style.backgroundColor = "#374151";
+        mainTitle.style.borderRadius = "0.75rem"
+
+        
+        subTitle.style.color = "grey";
+        addButton.style.backgroundColor = "#374151";
+        const tasks = document.getElementById('tasks')
+        tasks.style.color = "grey";
+
+        const secondTask = document.createElement('li')
+        secondTask.textContent = 'Second Task';
+
+        tasks.appendChild(secondTask)
+        secondTask.classList.add("todo-item")
+
+        const h3Title = document.createElement("h3")
+        h3Title.textContent = 'This is child of main title';
+
+        mainTitle.appendChild(h3Title)
+        h3Title.style.fontSize = "0.7rem"
+        h3Title.style.fontWeight = "400"
+        h3Title.style.marginBottom = 0
+        h3Title.style.marginTop = "0.3rem"
+    </script>
+</body>
+</html>

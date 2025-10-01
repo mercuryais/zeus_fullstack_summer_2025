@@ -164,3 +164,26 @@ where i.film_id in (
 	)
 )
 
+-- 14
+select st.store_id, avg(avg_sales_per_staff)
+from (
+	SELECT staff_id, sum(amount) AS avg_sales_per_staff
+	FROM payment
+	GROUP BY staff_id
+) as avg_amounts
+left join staff s on avg_amounts.staff_id = s.staff_id
+left join store st on st.store_id = s.store_id
+group by st.store_id
+
+-- 15
+select cu.first_name, cu.last_name
+from (
+select r.customer_id
+from inventory i
+left join rental r on i.inventory_id = r.inventory_id
+left join film f on f.film_id = i.film_id
+left join film_category fc on fc.film_id = f.film_id
+left join category c on c.category_id = fc.category_id
+where c.name not in ('Horror', 'Action') 
+) as customer_ids
+left join customer cu on cu.customer_id = customer_ids.customer_id
