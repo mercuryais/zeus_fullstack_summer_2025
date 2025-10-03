@@ -1,10 +1,249 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    box-sizing: border-box;
+}
+
+main {
+    max-width: 1440px;
+    height: 100vh;
+    margin: 0 auto;
+}
 
 nav {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
     height: 85px;
-    padding: 7px 127px;
+    background-color: #ffffff;
+    box-shadow: 0 59px 16px 0 rgba(8, 128, 0, 0),
+        0 38px 15px 0 rgba(8, 128, 0, 0.01), 0 21px 13px 0 rgba(8, 128, 0, 0.02),
+        0 9px 9px 0 rgba(8, 128, 0, 0.04), 0 2px 5px 0 rgba(8, 128, 0, 0.04);
+}
+.navbar-left-side {
+    max-width: 217px;
+    max-height: 29px;
+    margin-left: 127px;
+}
+
+.navbar-left-side #name {
+    color: #75c310;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.navbar-left-side #portfolio {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.navbar-right-side {
+    margin-right: 127px;
+}
+
+.navbar-right-side ul {
+    display: flex;
+    max-width: 675px;
     justify-content: space-between;
     align-items: center;
     flex-shrink: 0;
+    gap: 54.75px;
+}
+
+ul li {
+    list-style: none;
+    color: #75c310;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+ul li a {
+    text-decoration: none;
+    border-radius: 30px;
+    background: #75C310;
+    width: 149px;
+    height: 44.538px;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 10px 15px;
+}
+
+
+
+.sectionone {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 92px 127px;
+}
+.sectionone div {
+    width: 514px;
+    height: 513px;
+    margin: 0 auto;
+}
+.sectionone div img {
+    width: 514px;
+    height: 513px;
+    flex-shrink: 0;
+}
+.sectionone div h1 {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+}
+.sectionone div p {
+    color: #000;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    width: 60%;
+}
+.sectionone div a {
+    display: flex;
+    width: 220px;
+    padding: 15px 26px 15px 13px;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    border-radius: 30px;
+    background: #75C310;
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration: none;
+}
+
+.sectiontwo {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 92px 127px;
+}
+.sectiontwo div {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    width: 514px;
+    height: 513px;
+}
+.sectiontwo div h1 {
+    text-align: right;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+}
+.sectiontwo div a {
+    text-align: right;
+    display: flex;
+    width: 220px;
+    padding: 15px 26px 15px 13px;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    border-radius: 30px;
+    background: #75C310;
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration: none;
+}
+.sectiontwo div p {
+    text-align: right;
+    width: 100%;
+    color: #000;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    width: 60%;
+}
+.sectiontwo div img {
+    width: 514px;
+    height: 513px;
+    flex-shrink: 0;
+}
+
+
+
+
+
+.sectionthree div h1 {
+    color: #000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.sectionthree div p {
+    color: #000;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.sectionthree div a {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    width: 184px;
+    height: 55px;
+    flex-shrink: 0;
+    border-radius: 30px;
+    background: #75C310;
+    padding: 15px 26px 15px 13px;
+    text-decoration: none;
+}
+.sectionthree {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.sectionthree div{
+    margin-top: 120px;
+    width: 50%;
+    height: 127px;
+    align-content: center;
 }
