@@ -98,9 +98,11 @@ ul li a {
     padding: 92px 127px;
 }
 .sectionone div {
+    display: flex;
     width: 514px;
     height: 513px;
-    margin: 0 auto;
+    flex-direction: column;
+    justify-content: space-around;
 }
 .sectionone div img {
     width: 514px;
@@ -141,109 +143,31 @@ ul li a {
     line-height: normal;
     text-decoration: none;
 }
-
-.sectiontwo {
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    padding: 92px 127px;
-}
 .sectiontwo div {
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    width: 514px;
-    height: 513px;
-}
-.sectiontwo div h1 {
     text-align: right;
-    color: #000;
-    font-family: Montserrat;
-    font-size: 60px;
-    font-style: normal;
-    font-weight: 700;
-}
-.sectiontwo div a {
-    text-align: right;
-    display: flex;
-    width: 220px;
-    padding: 15px 26px 15px 13px;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 10px;
-    border-radius: 30px;
-    background: #75C310;
-    color: #FFF;
-    text-align: center;
-    font-family: Montserrat;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    text-decoration: none;
-}
-.sectiontwo div p {
-    text-align: right;
-    width: 100%;
-    color: #000;
-    font-family: Poppins;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    width: 60%;
-}
-.sectiontwo div img {
-    width: 514px;
-    height: 513px;
-    flex-shrink: 0;
+    width: 540px;
+    align-items: flex-end;
 }
 
-
-
-
-
-.sectionthree div h1 {
-    color: #000;
-    text-align: center;
-    font-family: Montserrat;
-    font-size: 64px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-}
-.sectionthree div p {
-    color: #000;
-    text-align: center;
-    font-family: Poppins;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-}
-.sectionthree div a {
-    color: #FFF;
-    font-family: Montserrat;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    width: 184px;
-    height: 55px;
-    flex-shrink: 0;
-    border-radius: 30px;
-    background: #75C310;
-    padding: 15px 26px 15px 13px;
-    text-decoration: none;
-}
 .sectionthree {
-    display: flex;
-    justify-content: space-around;
+    justify-content: center;
+}
+.sectionthree div {
+    justify-content: space-between;
+    text-align: center;
+    height: 250px;
+    width: 80%;
     align-items: center;
 }
-.sectionthree div{
-    margin-top: 120px;
-    width: 50%;
-    height: 127px;
+footer {
+    display: flex;
+    background-color: #75c310;
+    justify-content: space-between;
+} 
+footer img {
+    height: 320px;
+}
+footer div {
     align-content: center;
+    justify-content: space-around;
 }
