@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        (function() {
+            console.log("Hello World!")
+        })()
+        function Square(a) {
+            return a*a;
+        }
+        console.log(Square(4))
+
+        var f = function(c) {
+            return ((c * 9/5) + 32);
+        }
+        console.log(f(2))
+
+        let S = function(a, b) {
+            return a*b;
+        }
+        console.log(S(23, 2))
+
+        // let reverse = function(a) {
+        //     a.reverse();
+
+        // }
+        // console.log(reverse(12s34))
+
+        let isString = function(a) {
+            if (typeof a == "string") {
+                return true
+            }
+            else {
+                return false
+            }
+        }
+        console.log(isString(123))
+
+        let bankInterest = function(balance, interest, month) {
+            for (let index = 0; index < month; index++) {
+                balance *= interest
+            }
+            return balance
+        }
+        console.log(bankInterest(1000, 1.1, 12))
+
+        console.log(returnRandom(10, 20))
+        function returnRandom(a, b) {
+            return Math.random() * (b - a) + a;
+        }
+
+        console.log(getFactorial(5))
+        function getFactorial(a) {
+            for (let index = 1; index <= a; index++) {
+                var result = 1;
+                result *= index
+            }
+            return index
+        } 
+
+    </script>
+</body>
+</html>

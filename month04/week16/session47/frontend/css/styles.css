@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+}
+
+main {
+    font-size: 1.5rem;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: thistle;
+    height: 50vh;
+}
+
+h1 {
+    text-align: center;
+}
+section a {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+}
+section {
+    max-width: 800px;
+    margin: 0 auto;
+}
