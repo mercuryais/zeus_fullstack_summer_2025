@@ -61,15 +61,15 @@ function factorial(a) {
     return result
 }
 
-console.log(fibanocci(5));
-function fibanocci(a) {
-    let last = 0;
-    let fibanocci = 0;
-    for (let i = 0; i < a; i++) {
-        fibanocci = last + fibanocci;
-        last = i;
-        console.log(fibanocci)
-    }
-    return fibanocci;
-}
+function fibonacci(n) {
+    let num1 = 0;
+    let num2 = 1;
 
+    for (let i = 0; i < n; i++) {
+        console.log(num1);
+        let next = num1 + num2;
+        num1 = num2;
+        num2 = next;
+    }
+}
+fibonacci(5);
