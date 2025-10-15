@@ -161,3 +161,22 @@ function calculateAverage(grades) {
 }
 const averageGrade = calculateAverage(studentGrades);
 console.log("Average Grade: ", averageGrade);
+
+const numbers = [1, 2, 3];
+const doubled = numbers.map(num => num * 2);
+
+console.log(doubled); // [2, 4, 6]
+console.log(numbers); // [1, 2, 3] (original unchanged)
+
+
+const nums = [1, 2, 3, 4];
+
+const squares = nums.map(num => num * num);
+
+console.log(squares); // [1, 4, 9, 16]
+
+
+
+const factorial = n => n <= 1 ? 1 : n * factorial(n - 1);
+
+console.log(factorial(5)); // 120
