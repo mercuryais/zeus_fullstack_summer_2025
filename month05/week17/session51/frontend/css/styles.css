@@ -1,0 +1,81 @@
+.ex01 {
+    font-weight: bold;
+}
+.ex02 {
+    font-weight: normal;
+}
+.ex03 {
+    font-weight: lighter;
+}
+.ex04 {
+    font-weight: 100;
+}
+.ex05 {
+    font-weight: 900;
+}
+.ex06 {
+    font-style: oblique;
+}
+.ex07 {
+    text-transform: uppercase;
+    text-decoration:line-through;
+}
+.ex08 {
+    line-height: 10;
+}
+.ex09 {
+  list-style: none; 
+  padding-left: 0;
+}
+
+.ex09 li {
+  background-image: url('hyellou.avif');
+  background-repeat: no-repeat;
+  background-size: 16px 16px; 
+  padding-left: 24px; 
+  background-position: 0 4px;   
+}
+.shadow {
+    text-shadow: 2px 3px 3px red;
+}
+.shadow1 {
+    text-shadow: 2px -2px 5px rgb(239, 17, 17);
+}
+.shadow2 {
+    text-shadow: -1px 2px 2px rgb(3, 97, 134);
+}
+.shadow3 {
+    text-shadow: 2px -2px 2px rgb(25, 89, 51);
+}
+
+.pseudo1::first-letter {
+    font-size: 200%;
+}
+.pseudo2::first-line {
+    font-weight: bolder;
+}
+.link1:link {
+    color: aqua;
+}
+.link1:visited {
+    color: blueviolet;
+}
+.link1:active {
+    color: bisque;
+}
+.submit {
+    background-color: orange;
+    border-radius: 7px;
+    padding: 10px 20px;
+    color: white;
+    text-decoration:overline;
+}
+.submit:active {
+    color: green;
+}
+.submit:visited {
+    color: blueviolet;
+}
+.submit:hover {
+    color: rgb(28, 170, 170);
+}
