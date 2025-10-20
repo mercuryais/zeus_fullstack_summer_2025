@@ -1,0 +1,60 @@
+.first-ex { 
+    width: 300px;
+    height: 200px;
+    background-color: rgb(54, 87, 253);
+}
+.second-ex {
+    max-width: 500px;
+    max-height: 300px;
+    background-color: rgb(78, 148, 156);
+}
+.third-ex {
+    width: 200px;
+    height: 200px;
+    background-color: burlywood;
+    overflow: hidden;
+}
+.fifth-ex {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 500px;
+    max-height: 300px;
+    background-color: aquamarine;
+    overflow: scroll;
+    justify-content: space-around;
+    padding-top: 10px;
+    border: 2px solid black;
+}
+.windowone, .windowtwo {
+    max-width: 230px;
+    max-height: 140px;
+    overflow: scroll;
+    margin-bottom: 10px;
+    border: 2px solid black;
+}
+.windowone {
+    background-color: rgb(226, 185, 199);
+}
+.windowtwo {
+    background-color: rgb(227, 227, 123);
+}
+.sixth-ex {
+    display: flex;
+}
+.column-1, .column-2, .column-3 {
+    background-color: rgb(182, 220, 251);
+    width: 33%;
+}
+.ninth-ex {
+    width: 100%;
+    height: auto;
+}
+.blabla {
+    width: 100px;
+    height: 30px;
+    overflow: scroll;
+}
+.bleble {
+    width: 200px;
+    overflow-x: scroll;
+}

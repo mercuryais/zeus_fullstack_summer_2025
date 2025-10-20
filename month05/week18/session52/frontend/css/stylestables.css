@@ -1,0 +1,45 @@
+.first {
+    width: 700px;
+}
+.first td, .first th, .second td, .second th{
+    padding: 7px 10px 2px 10px; 
+    border: 1px solid black;
+}
+.second {
+    margin: 0 auto;
+    background-color: #FBFFDC;
+}
+.second td, .second th {
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+.bigone th {
+    background-color: rgb(19, 157, 118);
+    color: white;
+}
+.bigone td {
+    font-size: 14px;
+    font-weight: 200;
+    border-top: 1px solid rgb(226, 223, 223);
+}
+.bigone td, .bigone th {
+    padding: 10px 20px 5px 10px;
+}
+.bigone {
+    border-collapse: collapse;
+    border-bottom: 2px solid rgb(19, 157, 118);
+    border-top-left-radius: 40px;
+}
+.sudoku-ahh td {
+    border: 1px solid #a9dd00;
+    padding: 15px;
+    width: 25px;
+}
+.sudoku-ahh {
+    background-color: darkcyan;
+    empty-cells: hide;
+    border-collapse: collapse;
+}
+.sudoku-ahh td:hover {
+    background-color: rgb(12, 186, 186);
+}
