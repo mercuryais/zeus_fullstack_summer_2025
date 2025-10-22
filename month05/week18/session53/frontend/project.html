@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Welcome to the e24x7 Fitness Club : Court Reservation Page!</h2>
+    <div class="container">
+        <div class="demographic">
+            <h3>Member Demographics</h3>
+            <div>
+                <label>Name</label>
+                <input type="text" form="mainForm" required>
+            </div>
+            <div class="member">
+                <p>Are you a member?</p>
+                <input type="radio" name="ismember" form="mainForm" required>Member
+                <input type="radio" name="ismember" form="mainForm" required>Non-Member
+            </div>
+            <div>
+                <label>Email</label>
+                <input type="text" form="mainForm" required>
+            </div>
+        </div>
+        <div>
+            <label>Facility</label>
+            <select form="mainForm" required>
+                <option value="Badminition">Badminition</option>
+            </select>
+        </div>
+
+        <div class="reservation-date">
+            <p>Select a reservation date and time:</p>
+            <input type="date" form="mainForm" required>
+            <input type="date" form="mainForm" required>
+        </div>
+        <div>
+            <input type="radio" name="agree" form="mainForm" required>I agree to the Club's reservation policy
+        </div>
+        
+        <form action="/submit" id="mainForm">
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+h1 {
+    position: relative; 
+}
+button {
+    position: absolute;
+    left: 230px;
+    top: 30px;
+}
+.text {
+    background-color: yellow;
+    width: 200px;
+    height: 30px;
+    text-align: center;
+    padding-top: 10px;
+    position: absolute;
+    top: 390px;
+    left: 40px;
+}
+.second img {
+    position: relative;
+}
+.navigats ul li{
+    float: left;
+    display: block;
+    padding-left: 20px;
+}
