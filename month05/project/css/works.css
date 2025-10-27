@@ -95,3 +95,27 @@ footer {
     font-weight: 400;
     letter-spacing: 0;
 }
+@media screen and (max-width: 735px) {
+    nav {
+        justify-content: flex-start;
+    }
+    nav ul {
+        margin-left: 20px;
+        width: 100%;
+        justify-content: space-around;
+    }
+    .content {
+        margin: 100px 40px;
+    }
+    img {
+        width: 50%;
+        height: 50%;
+    }
+    .desc {
+        margin-top: 20px;
+        width: 50%;
+    }
+    h1, h2, h3 {
+        width: 65%;
+    }
+}
