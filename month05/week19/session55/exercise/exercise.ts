@@ -23,22 +23,19 @@ const user: Person = {
 function greetUser(who: Person): void {
     console.log(`Сайн уу ${who.name} та ${who.age} настай.`);
 }
+const greetUserOne = (whoone: Person) : void => console.log(`Сайн уу ${whoone.name} та ${whoone.age} настай.`);
 
 let id: string | number = 10;
 id = "Hi";
 
 type UserID = string | number;
 function findUserById(id: UserID): string {
-  // TypeScript энд 'id' нь string эсвэл number гэдгийг мэднэ.
 
-  if (typeof id === 'number') {
-    // Хэрэв id нь тоо бол
+  if (typeof id === 'number') {   
     return `Хэрэглэгчийг ID: ${id} (Тоо) ашиглан хайж байна...`;
   } else if (typeof id === 'string') {
-    // Хэрэв id нь текст бол
     return `Хэрэглэгчийг ID: "${id}" (Текст) ашиглан хайж байна...`;
   } else {
-    // Практикт боломжгүй ч, бүх төрлийг шалгах нь зүйтэй.
     return "Хэрэглэгчийн ID-ийн төрөл тодорхойгүй байна.";
   }
 }

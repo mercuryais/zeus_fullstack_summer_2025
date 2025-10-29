@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authors</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+
+        .author {
+            border: 1px solid #ddd;
+            padding: 10px 15px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+        .author h3 {
+            margin: 0;
+        }
+        .author p {
+            color:  #555;
+        }
+    </style>
+</head>
+<body>
+    <h1>The authors of books</h1>
+    <hr>
+
+
+    {% for author in author_key %} 
+        <div class="author">
+            <h3>{{ author.name }}</h3>
+            <p>Author Name: {{ author.birth_date }}</p>
+        </div>
+
+    {% empty %}
+        <p>No Author is registered</p>
+    {% endfor %}
+</body>
+</html>

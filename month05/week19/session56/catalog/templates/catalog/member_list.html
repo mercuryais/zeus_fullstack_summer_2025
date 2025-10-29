@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Members</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+
+        .member {
+            border: 1px solid #ddd;
+            padding: 10px 15px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+        .member h3 {
+            margin: 0;
+        }
+        .member p {
+            color:  #555;
+        }
+    </style>
+</head>
+<body>
+    <h1>The member in library</h1>
+    <hr>
+
+
+    {% for member in member_key %} 
+        <div class="member">
+            <h3>Member Name: {{ member.name }}</h3>
+            <p>Member Email: {{ member.email }}</p>
+        </div>
+
+    {% empty %}
+        <p>No Member is registered</p>
+    {% endfor %}
+</body>
+</html>
