@@ -1,6 +1,6 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from .models import Book, Author, Member
-
+from .forms import BookForm, AuthorForm, MemberForm
 def book_list(request):
     books = Book.objects.all()
     context = {
@@ -21,3 +21,33 @@ def member_list(request):
         'member_key': members
     }
     return render(request, 'catalog/member_list.html', context=context)
+
+def create_book(request):
+    if request.method == 'POST':
+        form = BookForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('book_list')
+    else:
+        form = BookForm()
+    return render(request, 'catalog/book_form.html', {'form': form})
+
+def create_author(request):
+    if request.method == 'POST':
+        form = AuthorForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('author_list')
+    else:
+        form = AuthorForm()
+    return render(request, 'catalog/author_form.html', {'form': form})
+
+def create_member(request):
+    if request.method == 'POST':
+        form = MemberForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('member_list')
+    else:
+        form = MemberForm()
+    return render(request, 'catalog/member_form.html', {'form': form})
