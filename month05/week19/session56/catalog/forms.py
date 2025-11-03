@@ -23,7 +23,7 @@ class AuthorForm(forms.ModelForm):
 class MemberForm(forms.ModelForm):
     class Meta:
         model = Member
-        fields = ['name', 'email']
+        fields = ['name', 'email']  
         labels = {
             'name': 'Гишүүний нэр',
             'email': 'Гишүүний имэйл'

@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from .models import Book, Author, Member
 from .forms import BookForm, AuthorForm, MemberForm
 def book_list(request):
@@ -51,3 +51,23 @@ def create_member(request):
     else:
         form = MemberForm()
     return render(request, 'catalog/member_form.html', {'form': form})
+
+def update_book(request, pk):
+    book = get_object_or_404(Book, pk=pk)
+    if request.method == 'POST':
+        form = BookForm(request.POST, instance=book)
+        if form.is_valid():
+            form.save()
+            return redirect('book_list')
+    else:
+        form = BookForm(instance=book)
+    return render(request, 'catalog/book_form.html', {'form': form})
+
+def delete_book(request ,pk):
+    book = get_object_or_404(Book, pk=pk)
+    
+    if request.method == 'POST':
+        book.delete()
+        return redirect('book_list')
+    
+    return render(request, 'catalog/book_confirm_delete.html', {'book': book})

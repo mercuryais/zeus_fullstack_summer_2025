@@ -7,5 +7,7 @@ urlpatterns = [
     path('member/', views.member_list, name='member_list'),
     path('book/new/', views.create_book, name='book_create'),
     path('author/new/', views.create_author, name='author_create'),
-    path('member/new/', views.create_member, name='member_create')
+    path('member/new/', views.create_member, name='member_create'),
+    path('book/<int:pk>/edit/', views.update_book, name='book_update'),
+    path('book/<int:pk>/delete/', views.delete_book, name='book_delete'),
 ]

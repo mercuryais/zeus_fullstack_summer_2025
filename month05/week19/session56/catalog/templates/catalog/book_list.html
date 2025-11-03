@@ -27,6 +27,29 @@
         .book p {
             color:  #555;
         }
+
+        /* UPDATE */
+        .book-actions a {
+            text-decoration: none;
+            padding: 5px 10px;
+            border-radius: 3px;
+            margin-left: 5px;
+            color: white;
+        }
+
+        .edit-link {
+            background-color: #ffc107;
+        }
+        .edit-link:hover {
+            background-color: #e0a800;
+        }
+        /* DELETE */
+        .delete-link {
+            background-color: #dc3545;
+        }
+        .delete-link:hover{
+            background-color: #c82333;
+        }
     </style>
 </head>
 <body>
@@ -40,6 +63,14 @@
             <p>Author Name: {{ book.author_name }}</p>
         </div>
 
+        <div class="book-actions">
+            <a href="{% url 'book_update' book.pk %}" class="edit-link">
+                Edit
+            </a>
+            <a href="{% url 'book_delete' book.pk %}" class="delete-link">
+                Delete
+            </a>
+        </div>
     {% empty %}
         <p>No Book is registered</p>
     {% endfor %}
