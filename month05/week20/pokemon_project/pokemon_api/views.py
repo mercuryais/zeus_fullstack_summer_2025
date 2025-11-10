@@ -1,5 +1,6 @@
 from django.shortcuts import render
 
-
-def pokemon_list(request):
-    return render(request, 'pokemon_api/pokemon_list.html')
+def index(request):
+# 'templates' хавтаснаас 'index.html'-г хайж олоод
+# хэрэглэгчид харуулна
+    return render(request, 'index.html')
