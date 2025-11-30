@@ -1,90 +1,171 @@
 * {
-    border: 0;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins"
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Poppins";
 }
-body {
-    max-width: 1440px;
-    margin: 0 auto;
-}
+
+/* HEADER */
 .nav {
-    max-height: 100px;
-    display: flex;
-    height: 100px;
-    justify-content: center;
-    align-items: center;
+  max-width: 1440px;
+  height: 100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.nav_contents {
-    width: 1286px;
-    height: 41px;
-    display: flex;
-    justify-content: space-between;
+
+.nav-items {
+  width: 1286px;
+  height: 41px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.logo {
-    display: flex;
-    align-items: center;
-    width: 185px;
-    height: 41px;
+
+.group-1 {
+  width: 180px;
+  height: 41px;
 }
-.logo a {
-    text-decoration: none;
-    color: #000000;
-    font-weight: 700;
-    font-size: 34px;
-    line-height: 100%;
-    letter-spacing: 0;
-    font-family: "Montserrat";
+
+.group-1 .logo {
+  display: flex;
 }
-.logo img {
-    width: 50px;
-    height: 32px;
+
+.group-1 .logo a {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 100%;
+  letter-spacing: 0;
+  color: #000000;
 }
-.menus {
-    display: flex;
-    align-items: center;
+
+.group-2 {
+  max-width: 430px;
+  width: 100%;
+  height: 24px;
 }
-.menus ul{
-    display: flex;
-    width: 430px;
-    height: 24px;
-    list-style: none;
-    justify-content: space-between;
+
+.group-2 ul {
+  display: flex;
+  justify-content: space-between;
 }
-.menus ul li {
-    font-weight: 500;
-    font-size: 16px;
+
+.group-2 ul li a {
+  font-weight: 500;
+  font-size: 16px;
+  color: #000000;
 }
-.icons {
-    display: flex;
-    align-items: center;
-    width: 300px;
+
+.group-3 {
+  width: 210px;
+  height: 41px;
 }
-.icons ul{
-    width: 100%;
-    height: 24px;
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
+
+.group-3 ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 41px;
 }
-.icons ul li{
-    width: 28px;
-    height: 28px;
+
+/* FOOTER */
+.footer {
+  max-width: 1440px;
+  height: 505px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 2px solid #d9d9d9;
 }
-.nav-icon-1 {
-    width: 23.33px;
-    height: 18.67px;
+
+.footer-content {
+  width: 1240px;
+  height: 419px;
 }
-.nav-icon-2 {
-    width: 22.17px;
-    height: 22.17px;
+
+.footer-upper {
+  display: flex;
+  justify-content: space-between;
+  width: 1133px;
+  height: 312px;
 }
-.nav-icon-3 {
-    width: 23.33px;
-    height: 20.81px;
+
+.hq-location,
+.links ul,
+.help ul,
+.news-letter {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-.nav-icon-4 {
-    width: 24.54px;
-    height: 22.06px;
+.hq-location {
+  width: 285px;
+  height: 150px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #9f9f9f;
+}
+.links ul {
+  height: 100%;
+}
+.help ul {
+  height: 76%;
+}
+.news-letter {
+  height: 28%;
+}
+.footer h3 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 100%;
+  color: #000000;
+}
+.news-letter p,
+.help p,
+.links p {
+  color: #9f9f9f;
+  font-weight: 500;
+  font-size: 16px;
+}
+.help li a,
+.links li a {
+  color: #000000;
+  font-weight: 500;
+  font-size: 16px;
+}
+.email-subscribe form {
+  display: flex;
+  width: 256px;
+  justify-content: space-between;
+  align-items: center;
+}
+.news-letter .email-subscribe input,
+.news-letter .email-subscribe button {
+  height: 21px;
+  font-size: 14px;
+  border-bottom: 1px #000000 solid;
+  background-color: transparent;
+}
+.news-letter .email-subscribe input {
+  color: #9f9f9f;
+  width: 173px;
+  font-weight: 400;
+}
+.news-letter .email-subscribe button {
+  color: #000000;
+  font-weight: 500;
+  width: 75px;
+}
+.footer-copyright {
+  display: flex;
+  height: 59px;
+  align-items: flex-end;
+  margin-top: 70px;
+  border-top: solid 1px #d9d9d9;
 }
