@@ -7,15 +7,23 @@
   text-decoration: none;
   font-family: "Poppins";
 }
+#root {
+  max-width: 1440px;
+  margin: 0 auto;
+}
 
 /* HEADER */
 .nav {
+  top: 0;
+  position: sticky;
   max-width: 1440px;
   height: 100px;
   margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 10;
+  background-color: #ffffff;
 }
 
 .nav-items {
@@ -168,4 +176,96 @@
   align-items: flex-end;
   margin-top: 70px;
   border-top: solid 1px #d9d9d9;
+}
+
+/* Banner */
+.banner {
+  max-width: 1440px;
+  margin: 0 auto;
+  position: relative;
+}
+.banner-ad {
+  width: 643px;
+  height: 443px;
+  background-color: #fff3e3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 153px;
+  left: 739px;
+  border-radius: 10px;
+}
+.banner-ad-content {
+  width: 561px;
+  height: 344px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.banner-ad-content p {
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 3px;
+  line-height: 100%;
+}
+.banner-ad-content h3 {
+  color: #b88e2f; 
+  font-weight: 700;
+  font-size: 52px;
+  line-height: 65px;
+  letter-spacing: 0px;
+}
+.banner-ad-content .lorem {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0px;
+}
+.banner-ad-content button {
+  background-color: #b88e2f;
+  width: 222px;
+  height: 74px;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 16px;
+  margin-top: 30px;
+}
+/* Page */
+.page {
+  height: 316px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+.page-background {
+  opacity: 50%;
+  filter: blur(4px);
+}
+.home-page {
+  position: absolute;
+  width: 145px;
+  height: 96px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+.home-page h3 {
+  font-weight: 500;
+  font-size: 48px;
+}
+.home-page a {
+  font-weight: 500;
+  font-size: 16px;
+  color: #000000;
+}
+.home-page p {
+  font-weight: 300;
+  font-size: 16px;
+}
+.arrowPic {
+  padding-top: 5px;
 }
