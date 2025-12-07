@@ -316,3 +316,24 @@
 .browse-title {
   text-align: center;
 }
+
+/* FEATURES */
+.high-quality, .warranty-protection, .free-shipping, .support-247{
+  display: flex;
+  align-items: center;
+}
+.text-part {
+  margin-left: 10px;
+}
+.text-part h4 {
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 150%;
+  color: #242424;
+}
+.text-part p {
+  color: #898989;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+}

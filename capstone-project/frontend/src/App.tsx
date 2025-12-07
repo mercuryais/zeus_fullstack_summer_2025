@@ -3,7 +3,8 @@ import Footer from "./component/footer.tsx"
 import Banner from "./component/banner.tsx"
 import Page from "./component/page.tsx"
 import Browse from "./component/browse.tsx"
-// import Share from "./component/share.tsx"
+import Share from "./component/share.tsx"
+import PFeatures  from "./component/product_features.tsx"
 function App() {
 
   return (
@@ -26,7 +27,7 @@ function App() {
       livingPic="/imgs/browse_2.png"
       bedroomPic="imgs/browse_3.png"
       />
-      {/* <Share 
+      <Share 
       shareImg1="/imgs/share_1.png"
       shareImg2="/imgs/share_2.png"
       shareImg3="/imgs/share_3.png"
@@ -35,7 +36,13 @@ function App() {
       shareImg6="/imgs/share_6.png"
       shareImg7="/imgs/share_7.png"
       shareImg8="/imgs/share_8.png"
-      shareImg9="/imgs/share_9.png"/> */}
+      shareImg9="/imgs/share_9.png"/>
+      <PFeatures 
+      trophyIcon="/imgs/product-features_trophy.png"
+      guarenteeIcon="/imgs/product-features_guarentee.png"
+      shippingIcon="/imgs/product-features_shipping.png"
+      supportIcon="/imgs/product-features_customer_support.png"
+      />
       <Footer/>
     </>
   )
