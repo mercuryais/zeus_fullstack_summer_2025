@@ -37,9 +37,15 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    'rest_framework',
+    'corsheaders',
+
+    'products',
 ]
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -75,9 +81,9 @@ WSGI_APPLICATION = 'final_project.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'furniture',
+        'NAME': 'products_db',
         'USER': 'postgres',
-        'PASSWORD' : '',
+        'PASSWORD' : '1029',
         'HOST': 'localhost',
         'PORT': '5433',
     }
@@ -120,10 +126,26 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
-STATICFILES_DIRS = [
-    BASE_DIR / 'static',
-]
 
+# Media files (uploaded images)
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR / 'media'
+# Default primary key field type
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+# CORS тохиргоо - React app-тай холбогдох
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:5173", # Vite default port
+    "http://127.0.0.1:5173",
+]
+# REST Framework тохиргоо
+REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.AllowAny',
+],
+    'DEFAULT_PAGINATION_CLASS':
+'rest_framework.pagination.PageNumberPagination',
+    'PAGE_SIZE': 10
+}
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
