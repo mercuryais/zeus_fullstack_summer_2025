@@ -1,10 +1,4 @@
-interface NavigationBar {
-  logoPic: string;
-  accountIcon: string;
-  searchIcon: string;
-  likedIcon: string;
-  cartIcon: string;
-}
+import type { NavigationBar } from "../types";
 
 function Header(props: NavigationBar) {
   return (

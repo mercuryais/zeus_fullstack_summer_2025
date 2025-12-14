@@ -1,14 +1,4 @@
-interface shareInter {
-  shareImg1: string;
-  shareImg2: string;
-  shareImg3: string;
-  shareImg4: string;
-  shareImg5: string;
-  shareImg6: string;
-  shareImg7: string;
-  shareImg8: string;
-  shareImg9: string;
-}
+import type { shareInter } from "../types";
 function Share(props: shareInter) {
   return (
     <>

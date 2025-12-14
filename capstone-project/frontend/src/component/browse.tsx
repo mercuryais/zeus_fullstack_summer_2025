@@ -1,8 +1,4 @@
-interface browseInter {
-    diningPic: string;
-    livingPic: string;
-    bedroomPic: string;
-}
+import type { browseInter } from "../types";
 
 function Browse(props: browseInter) {
     return <>

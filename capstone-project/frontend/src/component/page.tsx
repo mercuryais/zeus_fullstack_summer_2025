@@ -1,9 +1,4 @@
-interface pageInter {
-    pageImg: string;
-    currentPage: string;
-    logoPic: string;
-    arrow: string;
-}
+import type { pageInter } from "../types";
 function Page(props: pageInter) {
     return (
         <>

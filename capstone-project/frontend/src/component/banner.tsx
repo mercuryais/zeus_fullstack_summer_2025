@@ -1,6 +1,4 @@
-interface BannerInter {
-  bannerUrl: string;
-}
+import type { BannerInter } from "../types";
 function Banner(props: BannerInter) {
   return (
     <>

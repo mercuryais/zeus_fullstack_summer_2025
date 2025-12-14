@@ -1,9 +1,4 @@
-interface pFeatures {
-  trophyIcon: string;
-  guarenteeIcon: string;
-  shippingIcon: string;
-  supportIcon: string;
-}
+import type { pFeatures } from "../types";
 function PFeatures(props: pFeatures) {
   return (
     <>
