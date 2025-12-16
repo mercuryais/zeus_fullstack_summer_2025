@@ -22,8 +22,8 @@ class Product(models.Model):
         verbose_name="Үнэ"
 )
     sale = models.DecimalField(
-        max_digits=4,
-        decimal_places=2,
+        max_digits=3,
+        decimal_places=0,
         verbose_name="Хямдрал %"
     )
     stock = models.PositiveIntegerField(default=0, verbose_name="Үлдэгдэл")

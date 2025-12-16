@@ -47,11 +47,14 @@ export interface Product {
 id: number;
 name: string;
 description: string;
+detailed_description: string;
 price: string;
+sale: string;
+sku: string;
 stock: number;
 category: number;
 category_name: string;
-image: string | null;
+image: string ;
 is_active: boolean;
 created_at: string;
 updated_at: string;

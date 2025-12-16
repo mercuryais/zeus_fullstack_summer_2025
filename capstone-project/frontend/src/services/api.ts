@@ -12,8 +12,9 @@ const api = axios.create({
 // ============ Category API ============
 
 export const getCategories = async (): Promise<Category[]> => {
-  const response = await api.get<Category[]>('/categories/');
-  return response.data;
+  const response = await api.get('/categories/');
+  const data = response.data;
+  return data.results ?? data;
 };
 
 export const getCategoryById = async (id: number): Promise<Category> => {
@@ -39,8 +40,9 @@ export const getProducts = async (filters?: ProductFilters): Promise<Product[]> 
     params.append('max_price', filters.max_price.toString());
   }
 
-  const response = await api.get<Product[]>(`/products/?${params.toString()}`);
-  return response.data;
+  const response = await api.get(`/products/?${params.toString()}`);
+  const data = response.data;
+  return data.results ?? data;
 };
 
 export const getProductById = async (id: number): Promise<Product> => {
